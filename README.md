@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/paulfurley/python-tweet-splitter.svg?branch=master)](https://travis-ci.org/paulfurley/python-tweet-splitter)`
+
 # Installation
 
 **Not yet ready for primetime**
