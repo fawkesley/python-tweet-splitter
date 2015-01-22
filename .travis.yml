@@ -1,0 +1,10 @@
+language: python
+python:
+  - 2.7
+  - 3.4
+matrix:
+  fast_finish: true
+install:
+  -  pip install -r requirements_for_tests.txt
+script:
+  - make test
