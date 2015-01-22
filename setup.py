@@ -33,9 +33,9 @@ setup(
     url='https://github.com/paulfurley/python-tweet-splitter',
     install_requires=[],
     packages=['tweetsplitter'],
-    # entry_points={
-    #     'console_scripts': [
-    #         'diceware=diceware:main',
-    #     ],
-    # },
+    entry_points={
+        'console_scripts': [
+            'splittweet=tweetsplitter:main',
+        ],
+    },
 )
