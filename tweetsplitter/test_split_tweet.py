@@ -1,3 +1,7 @@
+# encoding: utf-8
+
+from __future__ import unicode_literals
+
 from nose.tools import assert_equal, assert_less_equal
 
 from . import split_tweet
@@ -32,3 +36,9 @@ def test_known_examples():
 def _do_test_split(text, length, expected_splits):
     got = split_tweet(text, length)
     assert_equal(expected_splits, got)
+
+
+def test_unicode():
+    got = split_tweet("Here is an exciting unicode character ❉", 20)
+    assert_equal(['1/3 Here is an', '2/3 exciting unicode', '3/3 character ❉'],
+                 got)
